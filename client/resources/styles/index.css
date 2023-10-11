@@ -1,0 +1,172 @@
+html {
+  cursor: url(../images/pokeball-cursor.png), auto;
+}
+
+body {
+  background-image: url(../images/pokemonBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120vh;
+  position: relative;
+  overflow-y: hidden;
+}
+
+#buttonAudio {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  right: 20px;
+  margin-right: 40px;
+}
+
+.hover-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: auto;
+  white-space: nowrap;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+#buttonAudio:hover .hover-message {
+  display: block;
+}
+
+h1 {
+  padding-top: 15px;
+  font-family: 'Dela Gothic One', cursive;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+#selectHeader {
+  color: white;
+  display: table;
+  text-align: center;
+  margin: auto;
+  font-family: 'Dela Gothic One', cursive;
+}
+
+#description {
+  font-family: 'Dela Gothic One', cursive;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#myTable {
+  margin: 0 auto;
+  margin-top: 215px;
+  width: 350px;
+  height: 325px;
+  overflow-y: auto;
+  border-radius: 8px;
+  background-color: teal;
+}
+
+#moves {
+  text-align: center;
+}
+
+#PokemonHeader {
+  width: 100px;
+  background-color: #fee8b8;
+}
+
+#SelectHeadBtn {
+  width: 150px;
+  background-color: #fee8b8;
+}
+
+#PokeNameRow {
+  background-color: #fee8b8;
+}
+
+#myTable {
+  background-color: #fee8b8;
+}
+
+td, tr {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border: 2px solid black;
+  border-style: groove;
+  margin-top: 30px;
+  background-color: #fee8b8;
+}
+
+table, th {
+  background-color: #fee8b8;
+  text-align: center;
+}
+
+.myButtons {
+  margin-top: 20px;
+  width: 75px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  height: 0 auto;
+  background-color: teal;
+}
+
+#abilities {
+  text-align: center;
+  font-family: 'Dela Gothic One', cursive;
+  color: white;
+}
+
+#sprite {
+  margin-top: -10px;
+  width: 500px;
+  height: auto;
+  animation: moveLeftRight 8s linear infinite;
+}
+
+/* make it run */
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(calc(50vw - 250px)); 
+  }
+  25% {
+    transform: translateX(0); 
+  }
+  75% {
+    transform: translateX(calc(100vw - 500px)); 
+  }
+  100% {
+    transform: translateX(calc(50vw - 250px)); 
+  }
+}
+
+#pokeName {
+  text-align: center; 
+  font-family: 'Dela Gothic One', cursive;
+  color: white;
+  background-color: rgb(11, 94, 38);
+  padding: 5px;
+  border: 2px solid black;
+  background-position: center;
+  margin: auto;
+  width: 19%;
+}
+
+#moves {
+  font-family: 'Dela Gothic One', cursive;
+  color: white;
+}
+
+#goBack {
+  margin: 5px;
+}
